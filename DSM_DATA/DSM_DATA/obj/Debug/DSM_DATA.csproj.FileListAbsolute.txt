@@ -1,0 +1,11 @@
+C:\sss\DSM_DATA\DSM_DATA\bin\Debug\DSM_DATA.dll
+C:\sss\DSM_DATA\DSM_DATA\bin\Debug\DSM_DATA.pdb
+C:\sss\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.dll
+C:\sss\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.pdb
+C:\sss\Bin\DSM_DATA.dll
+C:\sss\Bin\DSM_DATA.pdb
+E:\SSS\DSM\Bin\DSM_DATA.dll
+E:\SSS\DSM\Bin\DSM_DATA.pdb
+E:\SSS\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.csprojResolveAssemblyReference.cache
+E:\SSS\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.dll
+E:\SSS\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.pdb

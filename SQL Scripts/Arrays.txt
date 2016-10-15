@@ -1,0 +1,50 @@
+Use Northwind
+
+Go
+-- @IDs is the string of comma delimited integers 
+--  (you can increase the size if you think that your array will be very large)
+-- After parsings the string, integers are returned in a table
+
+
+CREATE Function fnSplitter (@IDs Varchar(100) )  
+Returns @Tbl_IDs Table  (ID Int)  As  
+
+Begin 
+ -- Append comma
+ Set @IDs =  @IDs + ',' 
+ -- Indexes to keep the position of searching
+ Declare @Pos1 Int
+ Declare @pos2 Int
+ 
+ -- Start from first character 
+ Set @Pos1=1
+ Set @Pos2=1
+
+ While @Pos1<Len(@IDs)
+ Begin
+  Set @Pos1 = CharIndex(',',@IDs,@Pos1)
+  Insert @Tbl_IDs Select  Cast(Substring(@IDs,@Pos2,@Pos1-@Pos2) As Int)
+  -- Go to next non comma character
+  Set @Pos2=@Pos1+1
+  -- Search from the next charcater
+  Set @Pos1 = @Pos1+1
+ End 
+ Return
+End
+
+Now we can use it in our stored procedure:
+Collapse | Copy Code
+
+Use Northwind
+
+Go
+
+CREATE PROCEDURE spSelectEmployees(@IDs Varchar(100)) AS 
+Select * From employees Where employeeid In (Select ID From fnSplitter(@IDs))
+GO
+
+Now go to query analyzer and enter these:
+Collapse | Copy Code
+
+Use Northwind 
+Exec spSelectEmployees '1,4,5,7,9'

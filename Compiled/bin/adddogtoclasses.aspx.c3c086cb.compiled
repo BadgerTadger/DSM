@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Competitors/AddDogToClasses.aspx" hash="fffffff94ae4f160" filehash="f6f8fcccbca98e5f" flags="110000" assembly="App_Web_adddogtoclasses.aspx.c3c086cb" type="ASP.competitors_adddogtoclasses_aspx">
+    <filedeps>
+        <filedep name="/Competitors/AddDogToClasses.aspx" />
+        <filedep name="/Competitors/AddDogToClasses.aspx.cs" />
+        <filedep name="/Site.master" />
+        <filedep name="/Site.master.cs" />
+    </filedeps>
+</preserve>

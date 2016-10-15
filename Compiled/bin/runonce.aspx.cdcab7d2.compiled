@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/RunOnce.aspx" hash="fffffff94ae4f160" filehash="152fa76b15a5cb47" flags="110000" assembly="App_Web_runonce.aspx.cdcab7d2" type="ASP.runonce_aspx">
+    <filedeps>
+        <filedep name="/RunOnce.aspx" />
+        <filedep name="/RunOnce.aspx.cs" />
+    </filedeps>
+</preserve>

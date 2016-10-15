@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Membership/CreateUserWizard.aspx" hash="fffffff94ae4f160" filehash="c64bc4f5c4c51b81" flags="110000" assembly="App_Web_createuserwizard.aspx.3f13c644" type="ASP.membership_createuserwizard_aspx">
+    <filedeps>
+        <filedep name="/Membership/CreateUserWizard.aspx" />
+        <filedep name="/Membership/CreateUserWizard.aspx.cs" />
+        <filedep name="/Site.master" />
+        <filedep name="/Site.master.cs" />
+    </filedeps>
+</preserve>

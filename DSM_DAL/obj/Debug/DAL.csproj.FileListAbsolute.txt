@@ -1,0 +1,17 @@
+c:\DogShowManager\DAL\bin\Debug\DAL.dll.config
+c:\DogShowManager\DAL\bin\Debug\DAL.dll
+c:\DogShowManager\DAL\bin\Debug\DAL.pdb
+c:\DogShowManager\DAL\obj\Debug\ResolveAssemblyReference.cache
+c:\DogShowManager\DAL\obj\Debug\DAL.dll
+c:\DogShowManager\DAL\obj\Debug\DAL.pdb
+C:\sss\DSM\DAL\bin\Debug\DAL.dll.config
+C:\sss\DSM\DAL\bin\Debug\DAL.dll
+C:\sss\DSM\DAL\bin\Debug\DAL.pdb
+C:\sss\DSM\DAL\obj\Debug\DAL.dll
+C:\sss\DSM\DAL\obj\Debug\DAL.pdb
+C:\sss\DSM_DAL\bin\Debug\DAL.dll.config
+C:\sss\DSM_DAL\bin\Debug\DAL.dll
+C:\sss\DSM_DAL\bin\Debug\DAL.pdb
+C:\sss\DSM_DAL\obj\Debug\DAL.dll
+C:\sss\DSM_DAL\obj\Debug\DAL.pdb
+C:\sss\DSM_DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

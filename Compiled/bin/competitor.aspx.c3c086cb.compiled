@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Competitors/Competitor.aspx" hash="fffffff94ae4f160" filehash="2a841fa7015c5a26" flags="110000" assembly="App_Web_competitor.aspx.c3c086cb" type="ASP.competitors_competitor_aspx">
+    <filedeps>
+        <filedep name="/Competitors/Competitor.aspx" />
+        <filedep name="/Competitors/Competitor.aspx.cs" />
+        <filedep name="/Site.master" />
+        <filedep name="/Site.master.cs" />
+    </filedeps>
+</preserve>

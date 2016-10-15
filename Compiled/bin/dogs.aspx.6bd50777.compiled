@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Dogs/Dogs.aspx" hash="fffffff94ae4f160" filehash="bfed9cc4e9d0195b" flags="110000" assembly="App_Web_dogs.aspx.6bd50777" type="ASP.dogs_dogs_aspx">
+    <filedeps>
+        <filedep name="/Dogs/Dogs.aspx" />
+        <filedep name="/Dogs/Dogs.aspx.cs" />
+        <filedep name="/Site.master" />
+        <filedep name="/Site.master.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ShowAdmin/AddClasses.aspx" hash="fffffff94ae4f160" filehash="d3320a56ece05b8d" flags="110000" assembly="App_Web_addclasses.aspx.2c1a9cef" type="ASP.showadmin_addclasses_aspx">
+    <filedeps>
+        <filedep name="/ShowAdmin/AddClasses.aspx" />
+        <filedep name="/ShowAdmin/AddClasses.aspx.cs" />
+        <filedep name="/ShowAdmin/ClubSetup.aspx" />
+        <filedep name="/ShowAdmin/ClubSetup.aspx.cs" />
+        <filedep name="/ShowAdmin/ShowSetup.aspx" />
+        <filedep name="/ShowAdmin/ShowSetup.aspx.cs" />
+        <filedep name="/Site.master" />
+        <filedep name="/Site.master.cs" />
+    </filedeps>
+</preserve>

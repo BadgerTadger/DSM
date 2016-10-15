@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A8E7BEF-6585-40DB-B7A2-5AE8EA659FDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DSM_DATA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\DSM_DATA.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressesBL.cs" />
+    <Compile Include="CatalogueListBL.cs" />
+    <Compile Include="Classes\Addresses.cs" />
+    <Compile Include="Classes\ClassNames.cs" />
+    <Compile Include="Classes\Clubs.cs" />
+    <Compile Include="Classes\DogBreeders.cs" />
+    <Compile Include="Classes\DogBreeds.cs" />
+    <Compile Include="Classes\DogClasses.cs" />
+    <Compile Include="Classes\DogDams.cs" />
+    <Compile Include="Classes\DogGender.cs" />
+    <Compile Include="Classes\DogOwners.cs" />
+    <Compile Include="Classes\Dogs.cs" />
+    <Compile Include="Classes\DogSires.cs" />
+    <Compile Include="Classes\Entrants.cs" />
+    <Compile Include="Classes\EntryClassesCount.cs" />
+    <Compile Include="Classes\FinalClassNames.cs" />
+    <Compile Include="Classes\Guarantors.cs" />
+    <Compile Include="Classes\Judges.cs" />
+    <Compile Include="Classes\LinkedShows.cs" />
+    <Compile Include="Classes\OwnersDogsClassesHandlers.cs" />
+    <Compile Include="Classes\People.cs" />
+    <Compile Include="Classes\RingNumbers.cs" />
+    <Compile Include="Classes\RunningOrders.cs" />
+    <Compile Include="Classes\ShowEntryClasses.cs" />
+    <Compile Include="Classes\ShowFinalClasses.cs" />
+    <Compile Include="Classes\ShowHelpers.cs" />
+    <Compile Include="Classes\ShowRoles.cs" />
+    <Compile Include="Classes\Shows.cs" />
+    <Compile Include="Classes\ShowTypes.cs" />
+    <Compile Include="Classes\ShowYears.cs" />
+    <Compile Include="Classes\SpecialRequests.cs" />
+    <Compile Include="Classes\SplitClasses.cs" />
+    <Compile Include="Classes\CatalogueList.cs" />
+    <Compile Include="Classes\UserPerson.cs" />
+    <Compile Include="Classes\Venues.cs" />
+    <Compile Include="ClassNamesBL.cs" />
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="ClubsBL.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="DogBreedersBL.cs" />
+    <Compile Include="DogBreedsBL.cs" />
+    <Compile Include="DogClassesBL.cs" />
+    <Compile Include="DogDamsBL.cs" />
+    <Compile Include="DogGenderBL.cs" />
+    <Compile Include="DogOwnersBL.cs" />
+    <Compile Include="DogsBL.cs" />
+    <Compile Include="DogSiresBL.cs" />
+    <Compile Include="EntrantsBL.cs" />
+    <Compile Include="EntryClassCountBL.cs" />
+    <Compile Include="FinalClassNamesBL.cs" />
+    <Compile Include="GuarantorsBL.cs" />
+    <Compile Include="JudgesBL.cs" />
+    <Compile Include="LinkedShowsBL.cs" />
+    <Compile Include="OwnersDogsClassesHandlersBL.cs" />
+    <Compile Include="PeopleBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RingNumbersBL.cs" />
+    <Compile Include="RunningOrdersBL.cs" />
+    <Compile Include="ShowEntryClassesBL.cs" />
+    <Compile Include="ShowFinalClassesBL.cs" />
+    <Compile Include="ShowHelpersBL.cs" />
+    <Compile Include="ShowRolesBL.cs" />
+    <Compile Include="ShowsBL.cs" />
+    <Compile Include="ShowTypesBL.cs" />
+    <Compile Include="ShowYearsBL.cs" />
+    <Compile Include="SpecialRequestsBL.cs" />
+    <Compile Include="UserPersonBL.cs" />
+    <Compile Include="VenuesBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\BLL.dll" />
+    <Content Include="bin\Debug\BLL.pdb" />
+    <Content Include="obj\Debug\BLL.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

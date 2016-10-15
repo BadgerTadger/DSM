@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ShowAdmin/VenueSetup.aspx" hash="fffffff94ae4f160" filehash="372ad29b9b28240b" flags="110000" assembly="App_Web_venuesetup.aspx.2c1a9cef" type="ASP.showadmin_venuesetup_aspx">
+    <filedeps>
+        <filedep name="/ShowAdmin/VenueSetup.aspx" />
+        <filedep name="/ShowAdmin/VenueSetup.aspx.cs" />
+        <filedep name="/Site.master" />
+        <filedep name="/Site.master.cs" />
+    </filedeps>
+</preserve>

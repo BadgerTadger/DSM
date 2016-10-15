@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/print.aspx" hash="fffffff94ae4f160" filehash="2373948505d7c631" flags="110000" assembly="App_Web_print.aspx.cdcab7d2" type="ASP.print_aspx">
+    <filedeps>
+        <filedep name="/print.aspx" />
+        <filedep name="/print.aspx.cs" />
+    </filedeps>
+</preserve>

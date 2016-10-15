@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ShowAdmin/SetRing_Numbers.aspx" hash="fffffff94ae4f160" filehash="f29fc1e8a48b8d3b" flags="110000" assembly="App_Web_setring_numbers.aspx.2c1a9cef" type="ASP.showadmin_setring_numbers_aspx">
+    <filedeps>
+        <filedep name="/ShowAdmin/SetRing_Numbers.aspx" />
+        <filedep name="/ShowAdmin/SetRing_Numbers.aspx.cs" />
+        <filedep name="/Site.master" />
+        <filedep name="/Site.master.cs" />
+    </filedeps>
+</preserve>

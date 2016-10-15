@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home"  description="">
+    <siteMapNode title="Membership">  
+      <siteMapNode url="~/Membership/CreateUserWizard.aspx" title="Creating User Accounts" />
+    </siteMapNode>
+    <siteMapNode title="Roles">
+      <siteMapNode url="~/Roles/ManageRoles.aspx" title="Manage Roles" />
+    </siteMapNode>
+    <siteMapNode title="User Details">
+      <siteMapNode url="~/Users/PersonalInfo.aspx" title="Personal Information" />
+    </siteMapNode>
+    <siteMapNode title="Show Setup">
+      <siteMapNode url="~/ShowAdmin/ShowSetup.aspx" title="Setup a Show" />
+      <siteMapNode url="~/ShowAdmin/LinkedShows.aspx" title="Link Shows" />
+      <siteMapNode url="~/ShowAdmin/SetRing_Numbers.aspx" title="Ring Numbers" />
+      <siteMapNode url="~/ShowAdmin/SplitClasses.aspx" title="Split Classes" />
+    </siteMapNode>
+    <siteMapNode title="Show Entries">
+      <siteMapNode url="~/Competitors/Competitor.aspx" title="Add an Entry" />
+      <siteMapNode url="~/Competitors/EntryList.aspx" title="View/Edit an Entry" />
+      <siteMapNode url="~/Competitors/CatalogueList.aspx" title="View Catalogue List" />
+      <siteMapNode url="~/Competitors/SpecialRequests.aspx" title="Special Requests List" />
+      <siteMapNode url="~/Competitors/RunningOrders.aspx" title="Running Orders" />
+      <siteMapNode url="~/Competitors/ChangeHandler.aspx" title="Change Handler" />
+    </siteMapNode>
+    <siteMapNode title="Dogs">
+      <siteMapNode url="~/Dogs/DogSetup.aspx" title="Manage Dogs" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
