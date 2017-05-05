@@ -49,10 +49,19 @@ namespace DSM_Import
         private void btnGetFile_Click(object sender, EventArgs e)
         {
             excelFile = GetExcelFile();
-            if (backgroundWorker1.IsBusy != true)
+            if (string.IsNullOrEmpty(excelFile))
             {
-                // Start the asynchronous operation.
-                backgroundWorker1.RunWorkerAsync();
+                string msg = "No Import File selected";
+                Utils.LogToFile(msg);
+                resultLabel.Text = msg;
+            }
+            else
+            {
+                if (backgroundWorker1.IsBusy != true)
+                {
+                    // Start the asynchronous operation.
+                    backgroundWorker1.RunWorkerAsync();
+                }
             }
         }
 
@@ -270,9 +279,9 @@ namespace DSM_Import
                 dog.Year_Of_Birth = item.Year_Of_Birth;
             }
             dog.Merit_Points = (short)item.Merit_Points;
-            dog.Breeder = item.Breeder;
-            dog.Sire = item.Sire;
-            dog.Dam = item.Dam;
+            //dog.Breeder = item.Breeder;
+            //dog.Sire = item.Sire;
+            //dog.Dam = item.Dam;
 
             Guid? dog_ID = dog.Insert_Dog(user_ID);
 
@@ -452,14 +461,17 @@ namespace DSM_Import
                                         item.Owner_Registered_Name = textInfo.ToTitleCase(GetCellValue(spreadsheetDocument, cell));
                                         break;
                                     case 14:
-                                        item.Registered_Name = CleanDogName(GetCellValue(spreadsheetDocument, cell).ToLowerInvariant().Trim());
+                                        item.Vehicle_Registration = GetCellValue(spreadsheetDocument, cell);
                                         break;
                                     case 15:
+                                        item.Registered_Name = CleanDogName(GetCellValue(spreadsheetDocument, cell).ToLowerInvariant().Trim());
+                                        break;
+                                    case 16:
                                         tempRegNo = GetCellValue(spreadsheetDocument, cell).ToUpperInvariant();
                                         item.Registered_Number = FixKCName(tempRegNo, item.Registered_Name != lastRegName);
                                         lastRegName = item.Registered_Name;
                                         break;
-                                    case 16:
+                                    case 17:
                                         item.Breed = textInfo.ToTitleCase(GetCellValue(spreadsheetDocument, cell));
                                         if (string.IsNullOrWhiteSpace(item.Breed))
                                         {
@@ -467,10 +479,10 @@ namespace DSM_Import
                                             item.Breed = "Not Specified";
                                         }
                                         break;
-                                    case 17:
+                                    case 18:
                                         item.Sex = GetCellValue(spreadsheetDocument, cell);
                                         break;
-                                    case 18:
+                                    case 19:
                                         int.TryParse(GetCellValue(spreadsheetDocument, cell), out tempInt);
                                         if (tempInt > 0)
                                         {
@@ -491,16 +503,16 @@ namespace DSM_Import
                                             Utils.LogToFile(string.Format("Invalid date of birth for record number {0}", rowNumber));
                                         }
                                         break;
-                                    case 19:
-                                        item.Breeder = GetCellValue(spreadsheetDocument, cell);
-                                        break;
+                                    //case 19:
+                                    //    item.Breeder = GetCellValue(spreadsheetDocument, cell);
+                                    //    break;
+                                    //case 20:
+                                    //    item.Sire = GetCellValue(spreadsheetDocument, cell);
+                                    //    break;
+                                    //case 21:
+                                    //    item.Dam = GetCellValue(spreadsheetDocument, cell);
+                                    //    break;
                                     case 20:
-                                        item.Sire = GetCellValue(spreadsheetDocument, cell);
-                                        break;
-                                    case 21:
-                                        item.Dam = GetCellValue(spreadsheetDocument, cell);
-                                        break;
-                                    case 22:
                                         int.TryParse(GetCellValue(spreadsheetDocument, cell), out tempInt);
                                         if (tempInt > -1)
                                         {
@@ -512,7 +524,7 @@ namespace DSM_Import
                                             ok = false;
                                         }
                                         break;
-                                    case 23:
+                                    case 21:
                                         int.TryParse(GetCellValue(spreadsheetDocument, cell), out tempInt);
                                         if (tempInt > -1)
                                         {
@@ -524,25 +536,25 @@ namespace DSM_Import
                                             ok = false;
                                         }
                                         break;
-                                    case 24:
+                                    case 22:
                                         item.Preferred_Judge = GetCellValue(spreadsheetDocument, cell);
                                         break;
-                                    case 25:
+                                    case 23:
                                         item.Extras = GetCellValue(spreadsheetDocument, cell);
                                         break;
-                                    case 26:
+                                    case 24:
                                         item.Confirmed_Acceptance_Of_Declaration = GetCellValue(spreadsheetDocument, cell) == "Yes";
                                         break;
-                                    case 27:
+                                    case 25:
                                         item.Withdraw_All_Entries_If_Balloted_Out_Of_Championship_C = GetCellValue(spreadsheetDocument, cell) == "Yes";
                                         break;
-                                    case 28:
+                                    case 26:
                                         item.Show_Address_In_Catalogue = GetCellValue(spreadsheetDocument, cell) == "Yes";
                                         break;
-                                    case 29:
+                                    case 27:
                                         item.Notes_To_Organiser = GetCellValue(spreadsheetDocument, cell);
                                         break;
-                                    case 30:
+                                    case 28:
                                         int.TryParse(GetCellValue(spreadsheetDocument, cell), out tempInt);
                                         if (tempInt > 0)
                                         {
@@ -554,7 +566,7 @@ namespace DSM_Import
                                             Utils.LogToFile(string.Format("Invalid date of entry for record number {0}", rowNumber));
                                         }
                                         break;
-                                    case 31:
+                                    case 29:
                                         item.ImportRecord = GetCellValue(spreadsheetDocument, cell) == "Yes";
                                         break;
                                 }
@@ -896,7 +908,7 @@ namespace DSM_Import
             OpenFileDialog openExcel = new OpenFileDialog();
             openExcel.Title = "Open Excel File";
             openExcel.Filter = "Excel Files|*.xlsx";
-            openExcel.InitialDirectory = @"E:\SSS\DSM\Data";
+            openExcel.InitialDirectory = @"C:\DSM\Data";
             if (openExcel.ShowDialog() == DialogResult.OK)
             {
                 retVal = openExcel.FileName.ToString();

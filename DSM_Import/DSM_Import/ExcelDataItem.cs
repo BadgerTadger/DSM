@@ -113,6 +113,13 @@ namespace DSM_Import
             set { _owner_Registered_Name = value; }
         }
 
+        private string _vehicle_Registration;
+        public string Vehicle_Registration
+        {
+            get { return _vehicle_Registration; }
+            set { _vehicle_Registration = value; }
+        }
+
         private string _registered_Name;
         public string Registered_Name
         {
@@ -155,26 +162,26 @@ namespace DSM_Import
             set { _year_Of_Birth = value; }
         }
 
-        private string _breeder;
-        public string Breeder
-        {
-            get { return _breeder; }
-            set { _breeder = value; }
-        }
+        //private string _breeder;
+        //public string Breeder
+        //{
+        //    get { return _breeder; }
+        //    set { _breeder = value; }
+        //}
 
-        private string _sire;
-        public string Sire
-        {
-            get { return _sire; }
-            set { _sire = value; }
-        }
+        //private string _sire;
+        //public string Sire
+        //{
+        //    get { return _sire; }
+        //    set { _sire = value; }
+        //}
 
-        private string _dam;
-        public string Dam
-        {
-            get { return _dam; }
-            set { _dam = value; }
-        }
+        //private string _dam;
+        //public string Dam
+        //{
+        //    get { return _dam; }
+        //    set { _dam = value; }
+        //}
 
         private int _merit_Points;
         public int Merit_Points
