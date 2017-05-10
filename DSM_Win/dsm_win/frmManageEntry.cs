@@ -64,6 +64,7 @@ namespace dsm_win
             List<Entrants> entrantList = entrants.GetEntrantsByShow_ID(_show_ID, true);
             foreach (Entrants entrant in entrantList)
             {
+                _prev_Owner_ID = new Guid();
                 DogClasses dc = new DogClasses(connString);
                 List<DogClasses> dcList = dc.GetDog_ClassesByEntrant_ID((Guid)entrant.Entrant_ID);
                 foreach (DogClasses dogClass in dcList)

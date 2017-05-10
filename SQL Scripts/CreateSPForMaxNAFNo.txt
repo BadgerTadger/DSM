@@ -1,0 +1,13 @@
+USE [dsm]
+GO
+/****** Object:  StoredProcedure [dbo].[spGetMaxNAFNo]    Script Date: 09/05/2017 18:19:26 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[spGetMaxNAFNo]
+AS
+	SET NOCOUNT ON;
+select MAX(CONVERT(int, SUBSTRING(Reg_No, 5, LEN(Reg_No)))) AS MaxNAF
+from tblDogs
+WHERE Reg_No LIKE 'NAF_%'

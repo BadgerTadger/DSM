@@ -1,5 +1,5 @@
 --'DBF00179-04B2-442D-9D0D-2461F872EAFB'
-Declare @Show_ID uniqueidentifier = '5BDD261C-B420-4830-9646-CF8C8365B1C6'
+Declare @Show_ID uniqueidentifier = 'A28DC61C-425A-49BC-992D-C293618AC98E'
 --Declare @Show_Entry_Class_ID uniqueidentifier = '9613FDC2-897C-45E1-B80F-F2294C797AB7'
 Declare @Show_Final_Class_ID uniqueidentifier = null
 declare @OrderBy int = 1

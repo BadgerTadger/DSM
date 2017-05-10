@@ -190,7 +190,8 @@ namespace dsm_win
         private void EditMeritPoints()
         {
             numNewValue = new NumericUpDown();
-            numNewValue.Minimum = 0;            
+            numNewValue.Minimum = 0;
+            numNewValue.Maximum = 500;            
             panel1.Controls.Add(numNewValue);
             dog = new Dogs(_connString, new Guid(_dogID));
             lblCurrentValue.Text = dog.Merit_Points.ToString();
