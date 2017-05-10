@@ -48,6 +48,8 @@ namespace DSM_Import
 
         private void btnGetFile_Click(object sender, EventArgs e)
         {
+            Dogs dogs = new Dogs(Utils.ConnectionString());
+            nafCount = dogs.GetMaxNAFNo();
             excelFile = GetExcelFile();
             if (string.IsNullOrEmpty(excelFile))
             {
@@ -296,6 +298,11 @@ namespace DSM_Import
 
         private int? GetBreedIDFromBreedName(string breedName)
         {
+            if (string.IsNullOrEmpty(breedName))
+            {
+                breedName = "Not Specified";
+            }
+
             DogBreeds breed = new DogBreeds(Utils.ConnectionString());
             List<DogBreeds> breedList = breed.GetDog_BreedsByDog_Breed_Description(breedName);
             if (breedList.Count > 0)
@@ -303,7 +310,7 @@ namespace DSM_Import
                 return breedList[0].Dog_Breed_ID;
             }
 
-            //Create New Dog Breed
+            //Create New Dog Breed if not empty
             int? breed_ID = breed.Insert_Dog_Breed(breedName);
 
             return breed_ID;
@@ -593,7 +600,9 @@ namespace DSM_Import
 
         private string FixKCName(string tempRegNo, bool incrementCounter)
         {
-            string retVal = "";
+            string retVal = "";           
+
+            tempRegNo = Regex.Replace(tempRegNo, @"\s+", "");
 
             if (Regex.IsMatch(tempRegNo, @"\d*[a-zA-Z]+\d+"))
             {

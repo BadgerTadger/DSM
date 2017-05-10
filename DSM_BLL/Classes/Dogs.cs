@@ -356,6 +356,23 @@ namespace BLL
             return retVal;
         }
 
+        public int GetMaxNAFNo()
+        {
+            int retVal = -1;
+
+            try
+            {
+                DogsBL dogs = new DogsBL(_connString);
+                retVal = dogs.GetMaxNAFNo();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return retVal;
+        }
+
         public Guid? Insert_Dog(Guid user_ID)
         {
             Guid? retVal = null;

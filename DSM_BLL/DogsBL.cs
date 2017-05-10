@@ -153,6 +153,25 @@ namespace BLL
             return retVal;
         }
 
+        public int GetMaxNAFNo()
+        {
+            int retVal = -1;
+
+            string spName = "spGetMaxNAFNo";
+
+            try
+            {
+                retVal = SSSDatabaseInfo.ExecuteScalarReturnInt(_connString, spName, null);
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.LogMessage(string.Format("Failed to get Max NAF Number. Error: {0}", ex.Message));
+                throw ex;
+            }
+
+            return retVal;
+        }
+
         public Guid? Insert_Dogs(string dog_KC_Name, string dog_Pet_Name, int? dog_Breed_ID, int? dog_Gender_ID,
             string reg_No, DateTime? date_Of_Birth, short? year_Of_Birth,
             short? merit_Points, bool? nLWU, string breeder, string sire, string dam, Guid user_ID)
