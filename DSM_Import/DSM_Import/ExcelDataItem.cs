@@ -252,6 +252,12 @@ namespace DSM_Import
             get { return _importRecord; }
             set { _importRecord = value; }
         }
-        
+
+        private short _runningOrder;
+        public short RunningOrder
+        {
+            get { return _runningOrder; }
+            set { _runningOrder = value; }
+        }
     }
 }

@@ -220,7 +220,7 @@ namespace BLL
                 new SSSDatabaseInfo.DatabaseParameter("Address_City", SSSDatabaseInfo.ParameterType.String, address_City),
                 new SSSDatabaseInfo.DatabaseParameter("Address_County", SSSDatabaseInfo.ParameterType.String, address_County),
                 new SSSDatabaseInfo.DatabaseParameter("Address_Postcode", SSSDatabaseInfo.ParameterType.String, address_Postcode),
-                new SSSDatabaseInfo.DatabaseParameter("User_ID", SSSDatabaseInfo.ParameterType.String, user_ID),
+                new SSSDatabaseInfo.DatabaseParameter("User_ID", SSSDatabaseInfo.ParameterType.Guid, user_ID),
             };
 
             try

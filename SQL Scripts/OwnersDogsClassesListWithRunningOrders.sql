@@ -9,14 +9,15 @@ select
 	+ ISNULL(NULLIF(owners.Person_Title,'') + ' ', '')
 	+ ISNULL(NULLIF(owners.Person_Forename,''),'') as Owner	
 	,d.Dog_KC_Name
+	,d.Merit_Points
 	,dc.Running_Order
 	,e.Offer_Of_Help
 	,CONVERT(VARCHAR, sfc.Show_Final_Class_No) + ' - ' + sfc.Show_Final_Class_Description as Class_Name
-	,e.Entrant_ID
+/*	,e.Entrant_ID
 	,owners.Person_ID
 	,d.Dog_ID
 	,dc.Dog_Class_ID
-	,sfc.Show_Final_Class_ID
+	,sfc.Show_Final_Class_ID*/
 	,e.Entry_Date
 FROM [tblDog_Classes] dc
 inner join [tblDogs] d
@@ -44,5 +45,9 @@ inner join [tblShows] s
 on sfc.Show_ID = s.Show_ID
 and s.Show_ID = @Show_ID
 where dc.Deleted_By is null
-and dc.Running_Order > 0
-order by sfc.Show_Final_Class_No, Running_Order
+--and dc.Running_Order > 0
+AND sfc.Show_Final_Class_No = 19
+order by sfc.Show_Final_Class_No, 
+--Dog_KC_Name, 
+Running_Order
+

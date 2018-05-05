@@ -128,6 +128,7 @@ namespace DSM_Import
                             }
                             dc.Handler_ID = owner_ID;
                             dc.Special_Request = item.Notes_To_Organiser;
+                            dc.Running_Order = item.RunningOrder;
                             Guid? dogClassID = dc.Insert_Dog_Class(user_ID);
                             if (dogClassID == null)
                             {
@@ -392,6 +393,7 @@ namespace DSM_Import
                     int previousCol = -1;
                     int currentCol = 0;
                     string lastRegName = "";
+                    bool eof = false;
 
                     foreach (Row excelDataRow in rows)
                     {
@@ -404,7 +406,7 @@ namespace DSM_Import
                             //Column Headings
                         }
 
-                        if (rowNumber > 1)
+                        if (rowNumber > 1 && !eof)
                         {
                             item.RowNumber = rowNumber;
                             //Getting Competitor Data (31 cols)
@@ -413,11 +415,18 @@ namespace DSM_Import
                                 int tempInt = -1;
                                 string tempRegNo = "";
 
+                                if (eof)
+                                {
+                                    ok = false;
+                                    break;
+                                }
+
                                 currentCol = (int)GetColumnIndexFromName(GetColumnName(cell.CellReference));
                                 switch (currentCol)
                                 {
                                     case 0:
-                                        item.Show_Name = GetCellValue(spreadsheetDocument, cell);
+                                        string showName = GetCellValue(spreadsheetDocument, cell).ToString();
+                                        item.Show_Name = showName;
                                         break;
                                     case 1:
                                         int.TryParse(GetCellValue(spreadsheetDocument, cell), out tempInt);
@@ -562,7 +571,14 @@ namespace DSM_Import
                                         item.Notes_To_Organiser = GetCellValue(spreadsheetDocument, cell);
                                         break;
                                     case 28:
-                                        int.TryParse(GetCellValue(spreadsheetDocument, cell), out tempInt);
+                                        var DoE = GetCellValue(spreadsheetDocument, cell);
+                                        if(DoE.ToString() == "WyD")
+                                        {
+                                            int yr = DateTime.Now.Year;
+                                            item.Date_Of_Entry = new DateTime(yr, 04, 01);
+                                            break;
+                                        }
+                                        int.TryParse(DoE, out tempInt);
                                         if (tempInt > 0)
                                         {
                                             item.Date_Of_Entry = Utils.FromExcelSerialDate(tempInt);
@@ -574,11 +590,24 @@ namespace DSM_Import
                                         }
                                         break;
                                     case 29:
-                                        item.ImportRecord = GetCellValue(spreadsheetDocument, cell) == "Yes";
+                                        item.ImportRecord = GetCellValue(spreadsheetDocument, cell) == "Y";
+                                        break;
+                                    case 30:
+                                        int.TryParse(GetCellValue(spreadsheetDocument, cell), out tempInt);
+                                        if (tempInt > 0)
+                                        {
+                                            item.RunningOrder = (short)tempInt;
+                                        }
                                         break;
                                 }
 
                                 previousCol = currentCol;
+                            }
+
+                            if (item.Show_Name == null || item.Show_Name.Length == 0)
+                            {
+                                eof = true;
+                                break;
                             }
 
                             if (ok)

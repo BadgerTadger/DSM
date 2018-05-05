@@ -185,8 +185,8 @@ namespace dsm_win
             dgvDogClasses.Columns["DogClassID"].Visible = false;
             dgvDogClasses.Columns["EntrantID"].Visible = false;
             dgvDogClasses.Columns["DogID"].Visible = false;
-            dgvDogClasses.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dgvDogClasses.AutoSize = true;
+            //dgvDogClasses.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            //dgvDogClasses.AutoSize = true;
         }
 
         private void dgvDogClasses_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

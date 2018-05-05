@@ -83,7 +83,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 56);
+            this.label2.Location = new System.Drawing.Point(6, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 28;
@@ -92,7 +92,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 84);
+            this.label3.Location = new System.Drawing.Point(6, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 29;
@@ -110,7 +110,7 @@
             // cboClassNames
             // 
             this.cboClassNames.FormattingEnabled = true;
-            this.cboClassNames.Location = new System.Drawing.Point(89, 53);
+            this.cboClassNames.Location = new System.Drawing.Point(89, 80);
             this.cboClassNames.Name = "cboClassNames";
             this.cboClassNames.Size = new System.Drawing.Size(393, 21);
             this.cboClassNames.TabIndex = 31;
@@ -125,7 +125,7 @@
             // 
             // numClassNumber
             // 
-            this.numClassNumber.Location = new System.Drawing.Point(89, 82);
+            this.numClassNumber.Location = new System.Drawing.Point(89, 52);
             this.numClassNumber.Name = "numClassNumber";
             this.numClassNumber.Size = new System.Drawing.Size(47, 20);
             this.numClassNumber.TabIndex = 33;

@@ -18,6 +18,7 @@ namespace dsm_win
         private Guid _clubID;
         private Guid _showID;
         private Guid _showClassID;
+        private bool _populated = false;
 
         public frmShowClasses(Guid clubID, Guid showID)
         {
@@ -75,8 +76,12 @@ namespace dsm_win
             else
             {
                 _showClassID = new Guid();
-                PopulateClassNames(1);
-                PopulateClassGenders(0);
+                if (!_populated)
+                {
+                    PopulateClassNames(1);
+                    PopulateClassGenders(0);
+                    _populated = true;
+                }
             }
         }
 

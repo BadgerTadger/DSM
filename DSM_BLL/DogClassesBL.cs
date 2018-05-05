@@ -299,7 +299,7 @@ namespace BLL
         }
 
         public Guid? Insert_Dog_Classes(Guid? entrant_ID, Guid? dog_ID, Guid? show_Entry_Class_ID, int preferred_Part, Guid? handler_ID,
-            string special_Request, Guid user_ID)
+            string special_Request, short? running_Order, Guid user_ID)
         {
             Guid? retVal = null;
 
@@ -312,6 +312,7 @@ namespace BLL
                 new SSSDatabaseInfo.DatabaseParameter("Preferred_Part", SSSDatabaseInfo.ParameterType.Int, preferred_Part),
                 new SSSDatabaseInfo.DatabaseParameter("Handler_ID", SSSDatabaseInfo.ParameterType.Guid, handler_ID),
                 new SSSDatabaseInfo.DatabaseParameter("Special_Request", SSSDatabaseInfo.ParameterType.String, special_Request),
+                new SSSDatabaseInfo.DatabaseParameter("Running_Order", SSSDatabaseInfo.ParameterType.Short, running_Order),
                 new SSSDatabaseInfo.DatabaseParameter("User_ID", SSSDatabaseInfo.ParameterType.Guid, user_ID),
             };
 

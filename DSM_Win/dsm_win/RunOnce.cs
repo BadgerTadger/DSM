@@ -64,10 +64,11 @@ namespace dsm_win
         public bool FoundSystemAdmin()
         {
             UserPerson user = new UserPerson(_connString);
-            user.GetUser_PersonByUser_ID(Program.UserID()); // .GetUser(AdminName);
-            if (user != null)
+            List<UserPerson> users = user.GetUser_PersonByUser_ID(Program.UserID()); // .GetUser(AdminName);
+            if (users != null && users.Count > 0)
+            {
                 return true;
-
+            }
             return false;
         }
     }

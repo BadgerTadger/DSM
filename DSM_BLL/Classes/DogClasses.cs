@@ -470,7 +470,7 @@ namespace BLL
             {
                 DogClassesBL dogClasses = new DogClassesBL(_connString);
                 retVal = (Guid?)dogClasses.Insert_Dog_Classes(_entrant_ID, _dog_ID, _show_Entry_Class_ID,
-                    _preferred_Part, _handler_ID, _special_Request, user_ID);
+                    _preferred_Part, _handler_ID, _special_Request, _running_Order, user_ID);
             }
             catch (Exception ex)
             {

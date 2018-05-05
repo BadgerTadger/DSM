@@ -24,7 +24,7 @@ namespace dsm_win
 
         public static Guid UserID()
         {
-            Guid retVal = new Guid("228149FE-46D2-4FBD-8916-8945E3C714FF");
+            Guid retVal = new Guid("A4CAA54C-47B0-4D4D-9AE4-E44684A32AB2");
 
             return retVal;
         }
