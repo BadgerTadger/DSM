@@ -91,7 +91,13 @@ namespace dsm_win
         }
         private void btnAllocateRunningOrders_Click(object sender, EventArgs e)
         {
-            RunningOrders.AllocateRunningOrders(_connString, _showID.ToString(), _userID);
+            int lastClassDay1 = 0;
+
+            if (MessageBox.Show("Is this a two day show?","Two Day Show?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                lastClassDay1 = int.Parse(Prompt.ShowDialog("Class to Split On", "Last Class of Day One"));
+            }
+            RunningOrders.AllocateRunningOrders(_connString, _showID.ToString(), _userID, lastClassDay1);
         }
 
         private void btnClearRunningOrders_Click(object sender, EventArgs e)

@@ -108,7 +108,7 @@ namespace BLL
             set { _day1_Show_ID = value; }
         }
 
-        public static void AllocateRunningOrders(string connString, string show_ID, Guid user_ID)
+        public static void AllocateRunningOrders(string connString, string show_ID, Guid user_ID, int classToSplitOn = 0)
         {
             try
             {
@@ -134,10 +134,20 @@ namespace BLL
                         Shows show = new Shows(connString, s_ID);
                         if (!(bool)show.Running_Orders_Allocated)
                         {
-                            AllEntriesInClass = OwnersDogsClassesDrawn.GetOwnersDogsClassesDrawnListData(connString, s_ID, null, false);
+                            AllEntriesInClass = OwnersDogsClassesDrawn.GetOwnersDogsClassesDrawnListData(connString, s_ID, null, false, 1, classToSplitOn);
                             AllocateRunningOrdersStage1(connString, s_ID, user_ID);
                             AllocateRunningOrdersStage2(connString, s_ID, user_ID);
                             AllocateRunningOrdersStage3(connString, s_ID, user_ID);
+                            if (classToSplitOn > 0)
+                            {
+                                if (OwnersDogsClassesDrawn.DeleteOwnersDogsClassesDrawnList(connString))
+                                {
+                                    AllEntriesInClass = OwnersDogsClassesDrawn.GetOwnersDogsClassesDrawnListData(connString, s_ID, null, false, classToSplitOn + 1);
+                                    AllocateRunningOrdersStage1(connString, s_ID, user_ID);
+                                    AllocateRunningOrdersStage2(connString, s_ID, user_ID);
+                                    AllocateRunningOrdersStage3(connString, s_ID, user_ID);
+                                }
+                            }
                             show.Running_Orders_Allocated = true;
                             show.Update_Show(s_ID, user_ID);
                         }
@@ -1088,7 +1098,7 @@ namespace BLL
             }
         }
 
-        public bool PopulateOwnersDogsClassesDrawnList(Guid show_ID, Guid? show_Final_Class_ID, bool display)
+        public bool PopulateOwnersDogsClassesDrawnList(Guid show_ID, Guid? show_Final_Class_ID, bool display, int startClass = 1, int endClass = 9999)
         {
             bool success = false;
 
@@ -1103,7 +1113,16 @@ namespace BLL
                 if (display)
                     success = runningOrders.PopulateOwnersDogsClassesList(show_ID, show_Final_Class_ID);
                 else
-                    success = runningOrders.PopulateOwnersDogsClassesListOrderByEntry_Date(show_ID, null);
+                {
+                    if (startClass == 1 && endClass == 9999)
+                    {
+                        success = runningOrders.PopulateOwnersDogsClassesListOrderByEntry_Date(show_ID, null);
+                    }
+                    else
+                    {
+                        success = runningOrders.PopulateOwnersDogsClassesListOrderByEntry_DateForClassRange(show_ID, startClass, endClass);
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -1130,14 +1149,14 @@ namespace BLL
             return retVal;
         }
 
-        public static List<OwnersDogsClassesDrawn> GetOwnersDogsClassesDrawnListData(string connString, Guid show_ID, Guid? show_Final_Class_ID, bool display)
+        public static List<OwnersDogsClassesDrawn> GetOwnersDogsClassesDrawnListData(string connString, Guid show_ID, Guid? show_Final_Class_ID, bool display, int startClass = 1, int endClass = 9999)
         {
             List<OwnersDogsClassesDrawn> ownersDogsClassesDrawnList = new List<OwnersDogsClassesDrawn>();
 
             try
             {
                 OwnersDogsClassesDrawn ownersDogsClassesDrawn = new OwnersDogsClassesDrawn(connString);
-                if (ownersDogsClassesDrawn.PopulateOwnersDogsClassesDrawnList(show_ID, show_Final_Class_ID, display))
+                if (ownersDogsClassesDrawn.PopulateOwnersDogsClassesDrawnList(show_ID, show_Final_Class_ID, display, startClass, endClass))
                 {
                     ownersDogsClassesDrawnList = ownersDogsClassesDrawn.GetOwnerDogsClassesDrawnList(show_ID, show_Final_Class_ID, display);
                 }
