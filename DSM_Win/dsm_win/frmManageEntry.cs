@@ -161,7 +161,7 @@ namespace dsm_win
                 dogRow[9] = dog.Breeder;
                 dogRow[10] = dog.Sire;
                 dogRow[11] = dog.Dam;
-                dogRow[12] = cn.Class_Name_Description;
+                dogRow[12] = string.Concat(sec.Class_No, " - ", cn.Class_Name_Description);
                 dogRow[13] = dc.Preferred_Part.ToString();
                 if (dc.Show_Final_Class_ID != null && dc.Show_Final_Class_ID != new Guid())
                 {

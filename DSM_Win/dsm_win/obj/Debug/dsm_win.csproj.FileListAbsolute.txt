@@ -54,7 +54,6 @@ C:\DSM\DSM_Win\dsm_win\bin\Debug\BLL.dll
 C:\DSM\DSM_Win\dsm_win\bin\Debug\DSM_DATA.dll
 C:\DSM\DSM_Win\dsm_win\bin\Debug\BLL.pdb
 C:\DSM\DSM_Win\dsm_win\bin\Debug\DSM_DATA.pdb
-C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csprojResolveAssemblyReference.cache
 C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.CTAddress.resources
 C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.frmCatalogue.resources
 C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.frmJudges.resources
@@ -74,3 +73,4 @@ C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.GenerateResource.Cache
 C:\DSM\DSM_Win\dsm_win\bin\Debug\BLL.dll.config
 C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.CoreCompileInputs.cache
 C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.CopyComplete
+C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csprojAssemblyReference.cache

@@ -9,3 +9,9 @@ E:\SSS\DSM\Bin\DSM_DATA.pdb
 E:\SSS\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.csprojResolveAssemblyReference.cache
 E:\SSS\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.dll
 E:\SSS\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.pdb
+C:\DSM\Bin\DSM_DATA.dll
+C:\DSM\Bin\DSM_DATA.pdb
+C:\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.csprojAssemblyReference.cache
+C:\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.csproj.CoreCompileInputs.cache
+C:\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.dll
+C:\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.pdb
