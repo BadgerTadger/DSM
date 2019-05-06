@@ -52,7 +52,7 @@
             this.dgvDogClasses.Location = new System.Drawing.Point(8, 63);
             this.dgvDogClasses.Name = "dgvDogClasses";
             this.dgvDogClasses.ReadOnly = true;
-            this.dgvDogClasses.Size = new System.Drawing.Size(784, 130);
+            this.dgvDogClasses.Size = new System.Drawing.Size(784, 364);
             this.dgvDogClasses.TabIndex = 13;
             this.dgvDogClasses.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDogClasses_CellDoubleClick);
             // 
