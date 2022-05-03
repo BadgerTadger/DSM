@@ -63,9 +63,11 @@ namespace dsm_win
 
         public bool FoundSystemAdmin()
         {
-            UserPerson user = new UserPerson(_connString);
-            List<UserPerson> users = user.GetUser_PersonByUser_ID(Program.UserID()); // .GetUser(AdminName);
-            if (users != null && users.Count > 0)
+            //UserPerson user = new UserPerson(_connString);
+            //List<UserPerson> users = user.GetUser_PersonByUser_ID(Program.UserID()); // .GetUser(AdminName);
+            People person = new People(_connString);
+            List<People> people = person.GetPeopleBySurnameForenameEmail("Cantrell", "Daren", AdminEmail);
+            if (people != null && people.Count > 0)
             {
                 return true;
             }

@@ -24,7 +24,10 @@ namespace dsm_win
 
         public static Guid UserID()
         {
-            Guid retVal = new Guid("A4CAA54C-47B0-4D4D-9AE4-E44684A32AB2");
+            //Guid retVal = new Guid("A4CAA54C-47B0-4D4D-9AE4-E44684A32AB2");
+            //Guid retVal = new Guid("B62E5FED-8459-4540-B0A9-CC50AAB7ADC2");
+            Guid? temp = Utils.SetUserID();
+            Guid retVal = temp ?? new Guid();
 
             return retVal;
         }

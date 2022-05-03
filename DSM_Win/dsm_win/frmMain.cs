@@ -219,5 +219,11 @@ namespace dsm_win
             frmCatalogue catalogue = new frmCatalogue(_club_ID, _show_ID);
             catalogue.ShowDialog();
         }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+            DSM_Import.frmMain frmImportMain = new DSM_Import.frmMain();
+            frmImportMain.ShowDialog();
+        }
     }
 }

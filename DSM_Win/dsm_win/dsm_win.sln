@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dsm_win", "dsm_win.csproj", "{4ADC9E31-7798-4B84-AD84-3167E474201D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSM_Import", "..\..\DSM_Import\DSM_Import\DSM_Import.csproj", "{5B56629A-5D13-459F-93F0-F18B89A4FDA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{4ADC9E31-7798-4B84-AD84-3167E474201D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4ADC9E31-7798-4B84-AD84-3167E474201D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4ADC9E31-7798-4B84-AD84-3167E474201D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B56629A-5D13-459F-93F0-F18B89A4FDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B56629A-5D13-459F-93F0-F18B89A4FDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B56629A-5D13-459F-93F0-F18B89A4FDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B56629A-5D13-459F-93F0-F18B89A4FDA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E78092D-EC63-4824-9F90-E28E9D8372C2}
 	EndGlobalSection
 EndGlobal
