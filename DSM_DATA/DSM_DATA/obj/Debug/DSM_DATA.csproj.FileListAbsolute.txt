@@ -14,3 +14,4 @@ C:\DSM\Bin\DSM_DATA.pdb
 C:\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.csproj.CoreCompileInputs.cache
 C:\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.dll
 C:\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.pdb
+C:\DSM\DSM_DATA\DSM_DATA\obj\Debug\DSM_DATA.csproj.AssemblyReference.cache

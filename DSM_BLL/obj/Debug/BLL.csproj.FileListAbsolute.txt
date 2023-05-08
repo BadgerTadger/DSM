@@ -35,4 +35,4 @@ C:\DSM\DSM_BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 C:\DSM\DSM_BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\DSM\DSM_BLL\obj\Debug\BLL.dll
 C:\DSM\DSM_BLL\obj\Debug\BLL.pdb
-C:\DSM\DSM_BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\DSM\DSM_BLL\obj\Debug\BLL.csproj.AssemblyReference.cache

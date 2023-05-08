@@ -73,8 +73,8 @@ C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.GenerateResource.Cache
 C:\DSM\DSM_Win\dsm_win\bin\Debug\BLL.dll.config
 C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.CoreCompileInputs.cache
 C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.CopyComplete
-C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csprojAssemblyReference.cache
 C:\DSM\DSM_Win\dsm_win\bin\Debug\DSM_Import.exe
 C:\DSM\DSM_Win\dsm_win\bin\Debug\DocumentFormat.OpenXml.dll
 C:\DSM\DSM_Win\dsm_win\bin\Debug\DSM_Import.pdb
 C:\DSM\DSM_Win\dsm_win\bin\Debug\DSM_Import.exe.config
+C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.AssemblyReference.cache

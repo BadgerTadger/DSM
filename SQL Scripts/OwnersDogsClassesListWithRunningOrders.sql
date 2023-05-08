@@ -1,6 +1,9 @@
 --'DBF00179-04B2-442D-9D0D-2461F872EAFB'
-Declare @Show_ID uniqueidentifier = 'A28DC61C-425A-49BC-992D-C293618AC98E'
+--Declare @Show_ID uniqueidentifier = 'A28DC61C-425A-49BC-992D-C293618AC98E'
 --Declare @Show_Entry_Class_ID uniqueidentifier = '9613FDC2-897C-45E1-B80F-F2294C797AB7'
+declare @Show_ID uniqueidentifier = 'F26737FA-7668-4141-A34B-E9524E1E71AE' -- West Suffolk 2022
+
+
 Declare @Show_Final_Class_ID uniqueidentifier = null
 declare @OrderBy int = 1
 select 
@@ -13,10 +16,11 @@ select
 	,dc.Running_Order
 	,e.Offer_Of_Help
 	,CONVERT(VARCHAR, sfc.Show_Final_Class_No) + ' - ' + sfc.Show_Final_Class_Description as Class_Name
+	,d.Dog_Breed_ID,d.Dog_Gender_ID,d.Date_Of_Birth
 /*	,e.Entrant_ID
 	,owners.Person_ID
 	,d.Dog_ID
-	,dc.Dog_Class_ID
+	de.Dog_Class_ID
 	,sfc.Show_Final_Class_ID*/
 	,e.Entry_Date
 FROM [tblDog_Classes] dc
@@ -44,10 +48,13 @@ and cn.Class_Name_Description <> 'NFC'
 inner join [tblShows] s
 on sfc.Show_ID = s.Show_ID
 and s.Show_ID = @Show_ID
-where dc.Deleted_By is null
+where dc.Deleted_By is null 
 --and dc.Running_Order > 0
-AND sfc.Show_Final_Class_No = 19
+--AND sfc.Show_Final_Class_No = 19
 order by sfc.Show_Final_Class_No, 
 --Dog_KC_Name, 
 Running_Order
+
+
+
 

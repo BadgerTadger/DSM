@@ -31,7 +31,9 @@ public class Constants
     public const short DATA_DELETED = 2;
     public const short DATA_INSERTED_AND_DELETED = 3;
 
-    public const int DRAW_QTY_LESS_THAN = 25;
+    //Changed this value to a large number to force the running order count to always be 6
+    //public const int DRAW_QTY_LESS_THAN = 25;
+    public const int DRAW_QTY_LESS_THAN = 999;
 
     public const short CLASS_GENDER_NS = 0;
     public const short CLASS_GENDER_DB = 1;
