@@ -55,7 +55,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(50, 15);
             this.label1.TabIndex = 31;
             this.label1.Text = "Classes";
             // 
@@ -73,8 +73,10 @@
             this.dgvRunningOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRunningOrders.Location = new System.Drawing.Point(10, 74);
             this.dgvRunningOrders.Name = "dgvRunningOrders";
+            this.dgvRunningOrders.RowHeadersWidth = 51;
             this.dgvRunningOrders.Size = new System.Drawing.Size(873, 501);
             this.dgvRunningOrders.TabIndex = 35;
+            this.dgvRunningOrders.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRunningOrders_CellDoubleClick);
             // 
             // pnlRunningOrders
             // 

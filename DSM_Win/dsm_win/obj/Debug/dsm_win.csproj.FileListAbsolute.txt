@@ -78,3 +78,4 @@ C:\DSM\DSM_Win\dsm_win\bin\Debug\DocumentFormat.OpenXml.dll
 C:\DSM\DSM_Win\dsm_win\bin\Debug\DSM_Import.pdb
 C:\DSM\DSM_Win\dsm_win\bin\Debug\DSM_Import.exe.config
 C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.AssemblyReference.cache
+C:\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.frmClassLists.resources

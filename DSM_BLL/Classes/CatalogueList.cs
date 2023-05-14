@@ -150,14 +150,14 @@ namespace BLL
             return retVal;
         }
 
-        public bool PopulateCatalogueListByRingNumber(Guid show_ID)
+        public bool PopulateCatalogueListByRingNumber(Guid show_ID, bool ChampOnly = false)
         {
             bool retVal = false;
 
             try
             {
                 CatalogueListBL catalogueListByRingNumbers = new CatalogueListBL(_connString);
-                retVal = catalogueListByRingNumbers.PopulateCatalogueListByRingNumber(show_ID);
+                retVal = catalogueListByRingNumbers.PopulateCatalogueListByRingNumber(show_ID, ChampOnly);
             }
             catch (Exception ex)
             {
@@ -167,7 +167,7 @@ namespace BLL
             return retVal;
         }
 
-        public static List<CatalogueList> GetCatalogueListData(string connString, string Show_ID)
+        public static List<CatalogueList> GetCatalogueListData(string connString, string Show_ID, bool ChampOnly = false)
         {
             List<CatalogueList> retVal = new List<CatalogueList>();
 
@@ -175,7 +175,7 @@ namespace BLL
             {
                 CatalogueList catalogue = new CatalogueList(connString);
                 Guid show_ID = new Guid(Show_ID);
-                if (catalogue.PopulateCatalogueListByRingNumber(show_ID))
+                if (catalogue.PopulateCatalogueListByRingNumber(show_ID, ChampOnly))
                 {
                     retVal = catalogue.GetCatalogueListByRingNumber();
                 }

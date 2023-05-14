@@ -1,7 +1,7 @@
 --'DBF00179-04B2-442D-9D0D-2461F872EAFB'
 --Declare @Show_ID uniqueidentifier = 'A28DC61C-425A-49BC-992D-C293618AC98E'
 --Declare @Show_Entry_Class_ID uniqueidentifier = '9613FDC2-897C-45E1-B80F-F2294C797AB7'
-declare @Show_ID uniqueidentifier = 'F26737FA-7668-4141-A34B-E9524E1E71AE' -- West Suffolk 2022
+declare @Show_ID uniqueidentifier = '06BEE055-C95F-4B7F-873B-472ACA263658' -- West Suffolk 2022
 
 
 Declare @Show_Final_Class_ID uniqueidentifier = null
@@ -16,13 +16,13 @@ select
 	,dc.Running_Order
 	,e.Offer_Of_Help
 	,CONVERT(VARCHAR, sfc.Show_Final_Class_No) + ' - ' + sfc.Show_Final_Class_Description as Class_Name
-	,d.Dog_Breed_ID,d.Dog_Gender_ID,d.Date_Of_Birth
+	,b.Dog_Breed_Description,g.Dog_Gender,d.Date_Of_Birth
 /*	,e.Entrant_ID
 	,owners.Person_ID
 	,d.Dog_ID
 	de.Dog_Class_ID
-	,sfc.Show_Final_Class_ID*/
-	,e.Entry_Date
+	,sfc.Show_Final_Class_ID
+	,e.Entry_Date*/
 FROM [tblDog_Classes] dc
 inner join [tblDogs] d
 on dc.Dog_ID = d.Dog_ID
@@ -30,6 +30,10 @@ and d.Deleted_By is null
 inner join [lnkDog_Owners] do
 on d.Dog_ID = do.Dog_ID
 and do.Deleted_By is null
+inner join lkpDog_Breeds b
+on d.Dog_Breed_ID = b.Dog_Breed_ID
+inner join lkpDog_Gender g
+on d.Dog_Gender_ID = g.Dog_Gender_ID
 inner join [tblPeople] owners
 on do.Owner_ID = owners.Person_ID
 and owners.Deleted_By is null

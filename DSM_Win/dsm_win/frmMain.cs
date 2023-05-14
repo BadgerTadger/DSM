@@ -225,5 +225,17 @@ namespace dsm_win
             DSM_Import.frmMain frmImportMain = new DSM_Import.frmMain();
             frmImportMain.ShowDialog();
         }
+
+        private void btnChampCatalogueList_Click(object sender, EventArgs e)
+        {
+            frmCatalogue catalogue = new frmCatalogue(_club_ID, _show_ID, true);
+            catalogue.ShowDialog();
+        }
+
+        private void btnClassLists_Click(object sender, EventArgs e)
+        {
+            frmClassLists classLists = new frmClassLists();
+            classLists.ShowDialog();
+        }
     }
 }

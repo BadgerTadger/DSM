@@ -36,11 +36,11 @@ namespace BLL
             return retVal;
         }
 
-        public bool PopulateCatalogueListByRingNumber(Guid show_ID)
+        public bool PopulateCatalogueListByRingNumber(Guid show_ID, bool ChampOnly = false)
         {
             bool retVal = false;
 
-            string spName = "spPopulateCatalogueListByRingNumber";
+            string spName = ChampOnly ? "spPopulateChampCatalogueListByRingNumber" : "spPopulateCatalogueListByRingNumber";
             SSSDatabaseInfo.DatabaseParameter[] p = new SSSDatabaseInfo.DatabaseParameter[]
             {
                 new SSSDatabaseInfo.DatabaseParameter("Show_ID", SSSDatabaseInfo.ParameterType.Guid, show_ID),

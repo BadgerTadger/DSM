@@ -20,6 +20,7 @@ namespace dsm_win
         private Guid _userID;
         private Guid _clubID;
         private Guid _showID;
+        private bool _champOnly;
         private List<CatalogueList> _catalogueListByRingNumberList;
         public List<CatalogueList> CatalogueListByRingNumberList
         {
@@ -40,10 +41,11 @@ namespace dsm_win
         }
         Table tblCatalogueTable = new Table();
 
-        public frmCatalogue(Guid clubID, Guid showID)
+        public frmCatalogue(Guid clubID, Guid showID, bool champOnly = false)
         {
             _clubID = clubID;
             _showID = showID;
+            _champOnly = champOnly;
             InitializeComponent();
         }
 
@@ -74,7 +76,7 @@ namespace dsm_win
             sb.Append("</style></head><body>");
             sb.Append("<div id='divCatalogueList' runat='server'>");
             sb.Append("<h5>ALPHABETICAL LIST OF ALL COMPETITORS FOLLOWS:</h5>");
-            CatalogueListByRingNumberList = CatalogueList.GetCatalogueListData(_connString, _showID.ToString());
+            CatalogueListByRingNumberList = CatalogueList.GetCatalogueListData(_connString, _showID.ToString(), _champOnly);
             if (CatalogueListByRingNumberList != null && CatalogueListByRingNumberList.Count > 0)
             {
                 tblCatalogueTable.CssClass = "CatalogueList";

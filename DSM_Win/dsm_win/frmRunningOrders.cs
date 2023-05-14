@@ -103,5 +103,36 @@ namespace dsm_win
         {
             this.Close();
         }
+
+        private void dgvRunningOrders_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+
+            if (e.RowIndex >= 0)
+            {
+                if (e.ColumnIndex != 10)
+                {
+                    MessageBox.Show("It is not possible to edit this field");
+                }
+                else
+                {
+                    string dogClassID = senderGrid.Rows[e.RowIndex].Cells["Dog_Class_ID"].Value.ToString();
+                    string entrantID = senderGrid.Rows[e.RowIndex].Cells["Entrant_ID"].Value.ToString();
+                    string dogID = senderGrid.Rows[e.RowIndex].Cells["Dog_ID"].Value.ToString();
+
+                    frmEditField editField = new frmEditField();
+                    editField.ShowID = _showID.ToString();
+                    editField.EntrantID = entrantID;
+                    editField.DogID = dogID;
+                    editField.DogClassID = dogClassID;
+                    editField.GridColumn = 17;
+                    if (editField.ShowDialog(this) == DialogResult.OK)
+                    {
+                        //FillRunningOrdersGrid(senderGrid, true);
+                    }
+                    editField.Dispose();
+                }
+            }
+        }
     }
 }
