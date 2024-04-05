@@ -36,3 +36,11 @@ C:\DSM\DSM_BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\DSM\DSM_BLL\obj\Debug\BLL.dll
 C:\DSM\DSM_BLL\obj\Debug\BLL.pdb
 C:\DSM\DSM_BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\_dev\DSM\Bin\BLL.dll.config
+C:\_dev\DSM\Bin\BLL.dll
+C:\_dev\DSM\Bin\BLL.pdb
+C:\_dev\DSM\DSM_BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\_dev\DSM\DSM_BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\_dev\DSM\DSM_BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\_dev\DSM\DSM_BLL\obj\Debug\BLL.dll
+C:\_dev\DSM\DSM_BLL\obj\Debug\BLL.pdb
