@@ -31,7 +31,8 @@ namespace DSM_Import
         private Guid prev_Owner_ID = new Guid();
         private Guid prev_Dog_ID = new Guid();
         private int dogClassMax = 0;
-        private int dogClassCount = 0;
+        private int dogClassCountDay1 = 0;
+        private int dogClassCountDay2 = 0;
         private Guid showEntryClassID;
         private string excelFile = "";
         int nafCount = -1;
@@ -91,10 +92,18 @@ namespace DSM_Import
 
             if (sec != null)
             {
-                dogClassCount++;
+                switch (item.Entered_Class)
+                {
+                    case 8: case 9: case 10: case 11: case 12: case 13: case 14:
+                        dogClassCountDay2++;
+                        break;
+                    default:
+                        dogClassCountDay1++;
+                        break;
+                }
                 if (dog_ID == prev_Dog_ID)
                 {
-                    if (dogClassCount > dogClassMax)
+                    if (dogClassCountDay1 > dogClassMax || dogClassCountDay2 > dogClassMax)
                     {
                         Utils.LogToFile("Maximum number of classes would be exceeded");
                         ok = false;
@@ -102,7 +111,23 @@ namespace DSM_Import
                 }
                 else
                 {
-                    dogClassCount = 1;
+                    switch (item.Entered_Class)
+                    {
+                        case 8:
+                        case 9:
+                        case 10:
+                        case 11:
+                        case 12:
+                        case 13:
+                        case 14:
+                            dogClassCountDay1 = 0;
+                            dogClassCountDay2 = 1;
+                            break;
+                        default:
+                            dogClassCountDay1 = 1;
+                            dogClassCountDay2 = 0;
+                            break;
+                    }
                 }
 
                 if (ok)
@@ -468,7 +493,8 @@ namespace DSM_Import
                                         item.Owner_Country = GetCellValue(spreadsheetDocument, cell);
                                         break;
                                     case 11:
-                                        item.Owner_Phone = GetCellValue(spreadsheetDocument, cell);
+                                        //item.Owner_Phone = GetCellValue(spreadsheetDocument, cell);
+                                        item.Owner_Phone = string.Empty;
                                         break;
                                     case 12:
                                         item.Owner_Email = GetCellValue(spreadsheetDocument, cell);

@@ -253,16 +253,35 @@ namespace BLL
                                                     if (OwnersDrawn.IndexOf(thisClassRow.Owner_ID) == -1)
                                                         OwnersDrawn.Add(thisClassRow.Owner_ID);
                                                     ShowFinalClasses sfc = new ShowFinalClasses(connString, thisClassRow.Show_Final_Class_ID);
-                                                    if (sfc.Show_ID == Day1_Show_ID)
+                                                    ShowEntryClasses sec = new ShowEntryClasses(connString, Guid.Parse(sfc.Show_Entry_Class_ID.ToString()));
+                                                    switch (sec.Class_No)
                                                     {
-                                                        if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
-                                                            OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                        case 8:
+                                                        case 9:
+                                                        case 10:
+                                                        case 11:
+                                                        case 12:
+                                                        case 13:
+                                                        case 14:
+                                                            if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                                OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
+                                                            break;
+                                                        default:
+                                                            if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                                OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                            break;
                                                     }
-                                                    else
-                                                    {
-                                                        if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
-                                                            OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
-                                                    }
+
+                                                    //if (sfc.Show_ID == Day1_Show_ID)
+                                                    //{
+                                                    //    if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                    //        OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                    //}
+                                                    //else
+                                                    //{
+                                                    //    if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                    //        OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
+                                                    //}
                                                     if (DogsDrawn.IndexOf(thisClassRow.Dog_ID) == -1)
                                                         DogsDrawn.Add(thisClassRow.Dog_ID);
                                                 }
@@ -315,16 +334,35 @@ namespace BLL
                                                     if (OwnersDrawn.IndexOf(thisClassRow.Owner_ID) == -1)
                                                         OwnersDrawn.Add(thisClassRow.Owner_ID);
                                                     ShowFinalClasses sfc = new ShowFinalClasses(connString, thisClassRow.Show_Final_Class_ID);
-                                                    if (sfc.Show_ID == Day1_Show_ID)
+                                                    ShowEntryClasses sec = new ShowEntryClasses(connString, Guid.Parse(sfc.Show_Entry_Class_ID.ToString()));
+                                                    switch (sec.Class_No)
                                                     {
-                                                        if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
-                                                            OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                        case 8:
+                                                        case 9:
+                                                        case 10:
+                                                        case 11:
+                                                        case 12:
+                                                        case 13:
+                                                        case 14:
+                                                            if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                                OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
+                                                            break;
+                                                        default:
+                                                            if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                                OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                            break;
                                                     }
-                                                    else
-                                                    {
-                                                        if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
-                                                            OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
-                                                    }
+
+                                                    //if (sfc.Show_ID == Day1_Show_ID)
+                                                    //{
+                                                    //    if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                    //        OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                    //}
+                                                    //else
+                                                    //{
+                                                    //    if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                    //        OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
+                                                    //}
                                                     if (DogsDrawn.IndexOf(thisClassRow.Dog_ID) == -1)
                                                         DogsDrawn.Add(thisClassRow.Dog_ID);
                                                 }
@@ -376,16 +414,35 @@ namespace BLL
                                                     if (OwnersDrawn.IndexOf(thisClassRow.Owner_ID) == -1)
                                                         OwnersDrawn.Add(thisClassRow.Owner_ID);
                                                     ShowFinalClasses sfc = new ShowFinalClasses(connString, thisClassRow.Show_Final_Class_ID);
-                                                    if (sfc.Show_ID == Day1_Show_ID)
+                                                    ShowEntryClasses sec = new ShowEntryClasses(connString, Guid.Parse(sfc.Show_Entry_Class_ID.ToString()));
+                                                    switch (sec.Class_No)
                                                     {
-                                                        if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
-                                                            OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                        case 8:
+                                                        case 9:
+                                                        case 10:
+                                                        case 11:
+                                                        case 12:
+                                                        case 13:
+                                                        case 14:
+                                                            if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                                OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
+                                                            break;
+                                                        default:
+                                                            if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                                OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                            break;
                                                     }
-                                                    else
-                                                    {
-                                                        if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
-                                                            OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
-                                                    }
+
+                                                    //if (sfc.Show_ID == Day1_Show_ID)
+                                                    //{
+                                                    //    if (OwnersDrawnOnDay1.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                    //        OwnersDrawnOnDay1.Add(thisClassRow.Owner_ID);
+                                                    //}
+                                                    //else
+                                                    //{
+                                                    //    if (OwnersDrawnOnDay2.IndexOf(thisClassRow.Owner_ID) == -1)
+                                                    //        OwnersDrawnOnDay2.Add(thisClassRow.Owner_ID);
+                                                    //}
                                                     if (DogsDrawn.IndexOf(thisClassRow.Dog_ID) == -1)
                                                         DogsDrawn.Add(thisClassRow.Dog_ID);
                                                 }
@@ -785,16 +842,35 @@ namespace BLL
                         displayItem.Owners.Add(Utils.DBNullToString(row["Owner"]));
                         if (RunningOrders.OwnersDrawn.IndexOf(ownerID) != -1)
                             displayItem.OwnerDrawn = true;
-                        if ((Guid)sfc.Show_ID == RunningOrders.Day1_Show_ID)
+                        ShowEntryClasses sec = new ShowEntryClasses(_connString, Guid.Parse(sfc.Show_Entry_Class_ID.ToString()));
+                        switch (sec.Class_No)
                         {
-                            if (RunningOrders.OwnersDrawnOnDay1.IndexOf(ownerID) != -1)
-                                displayItem.OwnerDrawnOnDay = true;
+                            case 8:
+                            case 9:
+                            case 10:
+                            case 11:
+                            case 12:
+                            case 13:
+                            case 14:
+                                if (RunningOrders.OwnersDrawnOnDay2.IndexOf(ownerID) != -1)
+                                    displayItem.OwnerDrawnOnDay = true;
+                                break;
+                            default:
+                                if (RunningOrders.OwnersDrawnOnDay1.IndexOf(ownerID) != -1)
+                                    displayItem.OwnerDrawnOnDay = true;
+                                break;
                         }
-                        else
-                        {
-                            if (RunningOrders.OwnersDrawnOnDay2.IndexOf(ownerID) != -1)
-                                displayItem.OwnerDrawnOnDay = true;
-                        }
+
+                        //if ((Guid)sfc.Show_ID == RunningOrders.Day1_Show_ID)
+                        //{
+                        //    if (RunningOrders.OwnersDrawnOnDay1.IndexOf(ownerID) != -1)
+                        //        displayItem.OwnerDrawnOnDay = true;
+                        //}
+                        //else
+                        //{
+                        //    if (RunningOrders.OwnersDrawnOnDay2.IndexOf(ownerID) != -1)
+                        //        displayItem.OwnerDrawnOnDay = true;
+                        //}
                         displayItem.Dog_KC_Name = Utils.DBNullToString(row["Dog_KC_Name"]);
                         bool offerOfHelp = Utils.DBNullToBool(row["Offer_Of_Help"]);
                         displayItem.Offer_Of_Help = offerOfHelp;
@@ -1065,21 +1141,43 @@ namespace BLL
                     }
 
                     ShowFinalClasses sfc = new ShowFinalClasses(_connString, Utils.DBNullToGuid(row["Show_Final_Class_ID"]));
+                    ShowEntryClasses sec = new ShowEntryClasses(_connString, Guid.Parse(sfc.Show_Entry_Class_ID.ToString()));
+                    switch (sec.Class_No)
+                    {
+                        case 8:
+                        case 9:
+                        case 10:
+                        case 11:
+                        case 12:
+                        case 13:
+                        case 14:
+                            if (RunningOrders.OwnersDrawnOnDay2.IndexOf(Utils.DBNullToGuid(row["Owner_ID"])) == -1)
+                            {
+                                RunningOrders.OwnersDrawnOnDay2.Add(Utils.DBNullToGuid(row["Owner_ID"]));
+                            }
+                            break;
+                        default:
+                            if (RunningOrders.OwnersDrawnOnDay1.IndexOf(Utils.DBNullToGuid(row["Owner_ID"])) == -1)
+                            {
+                                RunningOrders.OwnersDrawnOnDay1.Add(Utils.DBNullToGuid(row["Owner_ID"]));
+                            }
+                            break;
+                    }
 
-                    if ((Guid)sfc.Show_ID == RunningOrders.Day1_Show_ID)
-                    {
-                        if (RunningOrders.OwnersDrawnOnDay1.IndexOf(Utils.DBNullToGuid(row["Owner_ID"])) == -1)
-                        {
-                            RunningOrders.OwnersDrawnOnDay1.Add(Utils.DBNullToGuid(row["Owner_ID"]));
-                        }
-                    }
-                    else
-                    {
-                        if (RunningOrders.OwnersDrawnOnDay2.IndexOf(Utils.DBNullToGuid(row["Owner_ID"])) == -1)
-                        {
-                            RunningOrders.OwnersDrawnOnDay2.Add(Utils.DBNullToGuid(row["Owner_ID"]));
-                        }
-                    }
+                    //if ((Guid)sfc.Show_ID == RunningOrders.Day1_Show_ID)
+                    //{
+                    //    if (RunningOrders.OwnersDrawnOnDay1.IndexOf(Utils.DBNullToGuid(row["Owner_ID"])) == -1)
+                    //    {
+                    //        RunningOrders.OwnersDrawnOnDay1.Add(Utils.DBNullToGuid(row["Owner_ID"]));
+                    //    }
+                    //}
+                    //else
+                    //{
+                    //    if (RunningOrders.OwnersDrawnOnDay2.IndexOf(Utils.DBNullToGuid(row["Owner_ID"])) == -1)
+                    //    {
+                    //        RunningOrders.OwnersDrawnOnDay2.Add(Utils.DBNullToGuid(row["Owner_ID"]));
+                    //    }
+                    //}
                 }
             }
             catch (Exception ex)
