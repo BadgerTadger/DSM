@@ -84,12 +84,12 @@ C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\dsm_win.exe
 C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\dsm_win.pdb
 C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\BLL.dll
 C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\DSM_Import.exe
-C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\DSM_DATA.dll
 C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\DocumentFormat.OpenXml.dll
-C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\BLL.pdb
-C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\BLL.dll.config
+C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\DSM_DATA.dll
 C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\DSM_Import.pdb
 C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\DSM_Import.exe.config
+C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\BLL.pdb
+C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\BLL.dll.config
 C:\_dev\DSM\DSM_Win\dsm_win\bin\Debug\DSM_DATA.pdb
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.AssemblyReference.cache
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.CTAddress.resources
@@ -110,6 +110,6 @@ C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.Properties.Resources.resources
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.SelectPerson.resources
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.GenerateResource.cache
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.CoreCompileInputs.cache
-C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.CopyComplete
+C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.Up2Date
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.exe
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.pdb

@@ -585,8 +585,11 @@ namespace DSM_Import
                                         }
                                         else
                                         {
-                                            item.Date_Of_Entry = null;
-                                            Utils.LogToFile(string.Format("Invalid date of entry for record number {0}", rowNumber));
+                                            //item.Date_Of_Entry = null;
+                                            //Utils.LogToFile(string.Format("Invalid date of entry for record number {0}", rowNumber));
+                                            int yr = DateTime.Now.Year;
+                                            item.Date_Of_Entry = new DateTime(yr, 04, 01);
+                                            break;
                                         }
                                         break;
                                     case 29:

@@ -83,6 +83,8 @@ namespace dsm_win
                 }
             }
             RunningOrders.SetDay1Show_ID(_connString, showList);
+
+
             List<OwnersDogsClassesDrawn> oDCDList = OwnersDogsClassesDrawn.GetOwnersDogsClassesDrawnListData(_connString, _showID, _showClassID, display);
             gv.DataSource = oDCDList;
             //gv.Columns[0].Visible = false;

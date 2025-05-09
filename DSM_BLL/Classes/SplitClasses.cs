@@ -262,7 +262,7 @@ namespace BLL
             {
                 PartCount = 0;
                 int[] dogsInPart = new int[classParts.Count];
-                foreach (DogClasses dogClass in dogClassList)
+                foreach ( DogClasses dogClass in dogClassList)
                 {
                     Guid show_Entry_Class_ID = new Guid(dogClass.Show_Entry_Class_ID.ToString());
                     List<DogOwners> dogOwnersList = new List<DogOwners>();

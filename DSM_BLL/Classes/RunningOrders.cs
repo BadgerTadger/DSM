@@ -445,7 +445,7 @@ namespace BLL
                 {
                     if (row.Show_Final_Class_Description != "NFC"
                         && !row.Show_Final_Class_Description.Contains("YKC")
-                        && !row.Show_Final_Class_Description.Contains("Champ"))
+                        && !row.Show_Final_Class_Description.Contains("BINTRODUCTORY"))
                     {
                         int drawQty = 10;
                         DogClasses dogClass = new DogClasses(connString);
