@@ -3,19 +3,27 @@
   "WorkspaceRootPath": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|c:\\_dev\\dsm\\dsm_win\\dsm_win\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{2A8E7BEF-6585-40DB-B7A2-5AE8EA659FDF}|..\\..\\DSM_BLL\\BLL.csproj|c:\\_dev\\dsm\\dsm_bll\\classes\\runningorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|C:\\_dev\\DSM\\DSM_Win\\dsm_win\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|c:\\_dev\\dsm\\dsm_win\\dsm_win\\frmrunningorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|solutionrelative:frmrunningorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|C:\\_dev\\DSM\\DSM_Win\\dsm_win\\runonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|solutionrelative:runonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A8E7BEF-6585-40DB-B7A2-5AE8EA659FDF}|..\\..\\DSM_BLL\\BLL.csproj|c:\\_dev\\dsm\\dsm_bll\\classes\\entrants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B56629A-5D13-459F-93F0-F18B89A4FDA9}|..\\..\\DSM_Import\\DSM_Import\\DSM_Import.csproj|c:\\_dev\\dsm\\dsm_import\\dsm_import\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5B56629A-5D13-459F-93F0-F18B89A4FDA9}|..\\..\\DSM_Import\\DSM_Import\\DSM_Import.csproj|c:\\_dev\\dsm\\dsm_import\\dsm_import\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B56629A-5D13-459F-93F0-F18B89A4FDA9}|..\\..\\DSM_Import\\DSM_Import\\DSM_Import.csproj|c:\\_dev\\dsm\\dsm_import\\dsm_import\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B56629A-5D13-459F-93F0-F18B89A4FDA9}|..\\..\\DSM_Import\\DSM_Import\\DSM_Import.csproj|c:\\_dev\\dsm\\dsm_import\\dsm_import\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|c:\\_dev\\dsm\\dsm_win\\dsm_win\\frmrunningorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ADC9E31-7798-4B84-AD84-3167E474201D}|dsm_win.csproj|solutionrelative:frmrunningorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,56 +33,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-05-13T17:24:00.364Z",
+              "DocumentIndex": 4,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Import\\DSM_Import\\Utils.cs",
+              "RelativeDocumentMoniker": "..\\..\\DSM_Import\\DSM_Import\\Utils.cs",
+              "ToolTip": "C:\\_dev\\DSM\\DSM_Import\\DSM_Import\\Utils.cs",
+              "RelativeToolTip": "..\\..\\DSM_Import\\DSM_Import\\Utils.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:43:50.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Entrants.cs",
+              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_BLL\\Classes\\Entrants.cs",
+              "RelativeDocumentMoniker": "..\\..\\DSM_BLL\\Classes\\Entrants.cs",
+              "ToolTip": "C:\\_dev\\DSM\\DSM_BLL\\Classes\\Entrants.cs",
+              "RelativeToolTip": "..\\..\\DSM_BLL\\Classes\\Entrants.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAhwHUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:42:54.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Import\\DSM_Import\\App.config",
-              "RelativeDocumentMoniker": "..\\..\\DSM_Import\\DSM_Import\\App.config",
-              "ToolTip": "C:\\_dev\\DSM\\DSM_Import\\DSM_Import\\App.config",
-              "RelativeToolTip": "..\\..\\DSM_Import\\DSM_Import\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-05T18:32:56.614Z"
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Import\\DSM_Import\\frmMain.cs",
+              "RelativeDocumentMoniker": "..\\..\\DSM_Import\\DSM_Import\\frmMain.cs",
+              "ToolTip": "C:\\_dev\\DSM\\DSM_Import\\DSM_Import\\frmMain.cs",
+              "RelativeToolTip": "..\\..\\DSM_Import\\DSM_Import\\frmMain.cs",
+              "ViewState": "AgIAAFQCAAAAAAAAAAAawD4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:42:10.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Import\\DSM_Import\\frmMain.cs",
+              "RelativeDocumentMoniker": "..\\..\\DSM_Import\\DSM_Import\\frmMain.cs",
+              "ToolTip": "C:\\_dev\\DSM\\DSM_Import\\DSM_Import\\frmMain.cs [Design]",
+              "RelativeToolTip": "..\\..\\DSM_Import\\DSM_Import\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:42:07.261Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RunningOrders.cs",
+              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_BLL\\Classes\\RunningOrders.cs",
+              "RelativeDocumentMoniker": "..\\..\\DSM_BLL\\Classes\\RunningOrders.cs",
+              "ToolTip": "C:\\_dev\\DSM\\DSM_BLL\\Classes\\RunningOrders.cs",
+              "RelativeToolTip": "..\\..\\DSM_BLL\\Classes\\RunningOrders.cs",
+              "ViewState": "AgIAAH0BAAAAAAAAAAAlwJUBAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T13:48:55.204Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDMAAACAAAAAAAAAAA==",
+              "Title": "frmRunningOrders.cs",
+              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\frmRunningOrders.cs",
+              "RelativeDocumentMoniker": "frmRunningOrders.cs",
+              "ToolTip": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\frmRunningOrders.cs",
+              "RelativeToolTip": "frmRunningOrders.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowFUAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T18:13:18.291Z"
+              "WhenOpened": "2025-05-17T13:49:52.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RunOnce.cs",
-              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\RunOnce.cs",
-              "RelativeDocumentMoniker": "RunOnce.cs",
-              "ToolTip": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\RunOnce.cs",
-              "RelativeToolTip": "RunOnce.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "frmRunningOrders.cs [Design]",
+              "DocumentMoniker": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\frmRunningOrders.cs",
+              "RelativeDocumentMoniker": "frmRunningOrders.cs",
+              "ToolTip": "C:\\_dev\\DSM\\DSM_Win\\dsm_win\\frmRunningOrders.cs [Design]",
+              "RelativeToolTip": "frmRunningOrders.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T18:13:18.292Z"
+              "WhenOpened": "2025-05-17T13:49:49.885Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
