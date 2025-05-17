@@ -56,6 +56,6 @@ C:\_dev\DSM\DSM_Import\DSM_Import\obj\Debug\DSM_Import.frmMain.resources
 C:\_dev\DSM\DSM_Import\DSM_Import\obj\Debug\DSM_Import.Properties.Resources.resources
 C:\_dev\DSM\DSM_Import\DSM_Import\obj\Debug\DSM_Import.csproj.GenerateResource.cache
 C:\_dev\DSM\DSM_Import\DSM_Import\obj\Debug\DSM_Import.csproj.CoreCompileInputs.cache
-C:\_dev\DSM\DSM_Import\DSM_Import\obj\Debug\DSM_Import.csproj.CopyComplete
 C:\_dev\DSM\DSM_Import\DSM_Import\obj\Debug\DSM_Import.exe
 C:\_dev\DSM\DSM_Import\DSM_Import\obj\Debug\DSM_Import.pdb
+C:\_dev\DSM\DSM_Import\DSM_Import\obj\Debug\DSM_Import.csproj.Up2Date

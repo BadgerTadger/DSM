@@ -110,6 +110,6 @@ C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.Properties.Resources.resources
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.SelectPerson.resources
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.GenerateResource.cache
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.CoreCompileInputs.cache
-C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.CopyComplete
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.exe
 C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.pdb
+C:\_dev\DSM\DSM_Win\dsm_win\obj\Debug\dsm_win.csproj.Up2Date
