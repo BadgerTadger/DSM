@@ -241,6 +241,7 @@ namespace DSM_Import
             entrant.Show_ID = show_ID;
             entrant.Entry_Date = item.Date_Of_Entry;
             entrant.Withold_Address = !item.Show_Address_In_Catalogue;
+            entrant.Offer_Of_Help = item.Offer_of_Help;
             return (Guid)entrant.Insert_Entrant(user_ID);
         }
 
@@ -624,6 +625,9 @@ namespace DSM_Import
                                         {
                                             item.RunningOrder = (short)tempInt;
                                         }
+                                        break;
+                                    case 31:
+                                        item.Offer_of_Help = GetCellValue(spreadsheetDocument, cell) == "Y";
                                         break;
                                 }
 

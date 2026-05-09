@@ -259,5 +259,12 @@ namespace DSM_Import
             get { return _runningOrder; }
             set { _runningOrder = value; }
         }
+
+        private bool _offer_of_Help;
+        public bool Offer_of_Help 
+        { 
+            get { return _offer_of_Help; }
+            set { _offer_of_Help = value; } 
+        }
     }
 }
